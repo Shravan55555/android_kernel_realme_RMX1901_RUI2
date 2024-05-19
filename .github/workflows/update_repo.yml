@@ -31,8 +31,8 @@ jobs:
     - name: Update Repo
       id: sha
       run: |
-        git config --global user.name "ij_israfil"
-        git config --global user.email "israfilkhan494@gmail.com"
+        git config --global user.name "shravansayz"
+        git config --global user.email "shravankumarsayz@gmail.com"
         git submodule sync
         git submodule update --init --recursive
         cd $GITHUB_WORKSPACE/KernelSU
@@ -70,7 +70,7 @@ jobs:
         sudo apt install gcc-arm-linux-gnueabi -y
         sudo apt install binutils make python3 libssl-dev build-essential bc  bison flex zip unzip libssl-dev ca-certificates xz-utils mkbootimg cpio device-tree-compiler git git-lfs -y
         git clone --depth=1 https://github.com/kdrag0n/proton-clang.git clang
-        git clone https://github.com/ij-israfil/AnyKernel3 -b master --depth=1
+        git clone https://github.com/shravansayz/AnyKernel3 -b master --depth=1
         rm -rf AnyKernel3/.git
         rm -rf AnyKernel3/.github
         cd $GITHUB_WORKSPACE/KernelSU
